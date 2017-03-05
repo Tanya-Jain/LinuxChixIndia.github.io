@@ -1,149 +1,155 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>LinuxChix India</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Coustard' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Milonga' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet'>
+    <link rel='shortcut icon' href='assets/img/lcxlogo.ico' type='image/x-icon'/ >
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Coustard|Milonga|Quattrocento+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
 <body>
-    <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
   <div class="bg">
     <div class="MainHeading">
+      <img src="assets/img/lcxlogo.png">
       <p>LinuxChix India</p>
     </div>
-    <div class="Navi">
-      <p><button onclick="document.getElementById('KnowUs').style.display='block'" class="w3-btn .w3-animate-zoom CrossButtonH">know us</button></p>
-      <p><button onclick="document.getElementById('follow').style.display='block'" class="w3-btn .w3-animate-zoom CrossButtonH">follow</button></p>
+    <div id="Navi">
+      <p><button onclick="document.getElementById('KnowUs').style.display='block'" class="btn .w3-animate-zoom CrossButtonH">know us</button></p>
+      <p><button onclick="document.getElementById('follow').style.display='block'" class="btn .w3-animate-zoom CrossButtonH">follow</button></p>
     </div>
-    <div class="NextMeet">
+    <div class="NextMeet"><strong>
       <p>next meetup 12-16 pm | saturday 11-02-17</p>
-      <p>Srijan Technologies Pvt. Ltd.</p>
+      <p>Srijan Technologies Pvt. Ltd.</p> </strong>
     </div>
   </div>
-
-<!--Know Us Modal--->
-  <div id="KnowUs" class="Modal">
+  <!--Know Us Modal--->
+  <div id="KnowUs" class="Modal" style="display: none;">
     <div class="ModalContent w3-animate-zoom">
-
       <div class="ModalContainer ModalContainerHead">
         <span onclick="document.getElementById('KnowUs').style.display='none'" class="w3-closebtn CrossButton">x</span>
-        <h1>About</h1>
       </div>
-      <div class="ModalContainer">
-        <h5>LinuxChix India is a community for women who like Linux and for anyone who wants to support <b>women in computing</b>.</h5>
-      </div>
-
+      <div class="content-pop">
+        <div class="ModalContainer ModalContainerHead">
+          <h1>About</h1>
+        </div>
+        <div class="ModalContainer">
+          <h5>
+          LinuxChix India is a regional chapter in India of LinuxChix, a global community for women who like Linux
+          and for anyone who wants to support <strong>women in computing</strong>. We are an international group of Free Software
+          users and developers, founded in 1999 with the aim of supporting women in Linux. It is not only for women.
+          </h5>
+        </div>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-4">
             <div class="ModalContainer ModalContainerHead">
-              <h1>Mission</h1>
+              <br><h5 style="color:d3d4e7"><strong>Our Moto</strong></h5>
+            </div>
+            <div class="ModalContainer" style="color:#FAE6A3">
+              <h1>Be Polite<br>Be Helpful</h1>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="ModalContainer ModalContainerHead">
+              <h1>Our Aim and Vision..</h1>
             </div>
             <div class="ModalContainer">
-              <h5>Lorem ipsum... <b>Lorem ipsum...</b></h5>
+              <h5>
+                We aim to bring together women around India involved in various FOSS projects, enhance women participation
+                in FOSS related activities, share knowledge and increase awareness. Our vision is to promote the usage of FOSS
+                and to help women identify avenues for contribution with various levels of expertise - users, newbies,
+                enthusiasts, subject matter experts, geeks to various upstream projects.
+              </h5>
             </div>
           </div>
-          <div class="col-sm-6">
-            <div class="ModalContainer ModalContainerHead">
-              <h1>Values</h1>
-            </div>
-            <div class="ModalContainer">
-              <h5>Lorem ipsum... <b>Lorem ipsum...</b></h5>
-            </div>
-          </div>
-      </div>
-      <div class="ModalContainer ModalContainerHead">
-        <h1>Upcoming Meetups</h1>
-      </div>
-      <div class="ModalContainer">
-        <h5>Somewhere <b>11-02-17</b></h5>
-      </div>
-    </div>
-  </div>
-
-  <!-- Follow Modal -->
-  <div id="follow" class="Modal">
-    <div class="ModalContent w3-animate-zoom">
-      <div class="ModalContainer ModalContainerHead">
-        <span onclick="document.getElementById('follow').style.display='none'" class="w3-closebtn NavButton">x</span>
-        <h1>Follow</h1>
-      </div>
-      <div class="ModalContainer">
-        <div class="SocialIcons container">
-          <div class="row">
-            <div class="col-sm-8">
-                <p class="text-center" id="mail-text">Join our mailing list!</p>
-            </div>
-          </div>
-          <div class="row">
-
-            <div>
-            <div class="col-sm-4">
-              <a href="http://mailman.linuxchix.org/mailman/listinfo/indichix" target="_blank" rel=external>
-                <span class="glyphicon glyphicon-envelope"></span>
-              </a>
-            </div>
-            <div class="col-sm-4" id="subscribe">
-              <span class="glyphicon glyphicon-triangle-right"></span>
-              <p class="text-center">Subscribe</p>
-            </div>
-          </div>
-
-          <div>
-            <div class="col-sm-4" id="guidelines">
-              <p class="text-center">Guidelines</p>
-              <span class="glyphicon glyphicon-triangle-left"></span>
-            </div>
-            <div class="col-sm-4">
-              <a href="http://bit.ly/pydelhi-mailinglist-guidelines" target="_blank" rel=external>
-                <span class="glyphicon glyphicon-list-alt"></span>
-              </a>
-            </div>
-          </div>
-            <br>
-
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
-              <span>
-                <a href="https://www.facebook.com/indichix0/" target="_blank" rel=external><img src="assets/img/Facebook-color.svg"></a>
-              </span>
-            </div>
-            <div class="col-sm-4">
-              <span>
-                <a href="https://twitter.com/indichix0" target="_blank" rel=external><img src="assets/img/Twitter-color.svg"></a>
-              </span>
-            </div>
-            <div class="col-sm-4">
-              <span>
-                <a href="tg://join?invite=BzYbRwrKCTX224rH7ECSVQ" target="_blank" rel=external><img src="assets/img/Telegram_logo.svg"></a>
-              </span>
-            </div>
-
-            <div>
-            <div class="col-sm-4">
-                <a href="http://github.com/LinuxChixIndia" target="_blank" rel=external>
-                  <img src="assets/img/Github-color.svg">
-                </a>
-            </div>
-            <div class="col-sm-8">
-                <p class="text-center" id="github-text">Visit and collaborate with us on Github</p>
-            </div>
-          </div>
+        </div>
+        <div class="ModalContainer ModalContainerHead">
+          <h1>Upcoming Meetups</h1>
+        </div>
+        <div class="ModalContainer">
+          <h5>Place TBA <b>DD-MM-17 TBA</b></h5>
         </div>
       </div>
     </div>
   </div>
+  <!-- Follow Modal -->
+  <div id="follow" class="Modal" style="display: none;">
+    <div class="ModalContent w3-animate-zoom">
+      <div class="ModalContainer ModalContainerHead">
+          <span onclick="document.getElementById('follow').style.display='none'" class="w3-closebtn CrossButton">x</span>
+        </div>
+      <div class="content-pop">
+        <div class="ModalContainer ModalContainerHead">
+          <h1>Follow</h1>
+        </div>
+      </div>
+      <div class="ModalContainer">
+          <div class="SocialIcons container">
+            <div class="row">
+              <div class="col-sm-8">
+                  <p class="text-center" id="mail-text">Join our mailing list!</p>
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <div class="col-sm-4">
+                  <a href="http://mailman.linuxchix.org/mailman/listinfo/indichix" target="_blank" rel="external">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                  </a>
+                </div>
+                <div class="col-sm-4" id="subscribe">
+                  <span class="glyphicon glyphicon-triangle-right"></span>
+                  <p class="text-center">Subscribe</p>
+                </div>
+              </div>
+              <div>
+                <div class="col-sm-4" id="guidelines">
+                  <p class="text-center">Guidelines</p>
+                  <span class="glyphicon glyphicon-triangle-left"></span>
+                </div>
+                <div class="col-sm-4">
+                  <a href="http://bit.ly/pydelhi-mailinglist-guidelines" target="_blank" rel="external">
+                    <span class="glyphicon glyphicon-list-alt"></span>
+                  </a>
+                </div>
+              </div>
+              <br>
+            </div>
 
-</body>
-</html>
+            <div class="row">
+              <div class="col-sm-3">
+                <span class="fa fa-facebook-f">
+                  <a href="https://www.facebook.com/indichix0/" target="_blank" rel="external"></a>
+                </span>
+              </div>
+              <div class="col-sm-3">
+                <span class="fa fa-twitter">
+                  <a href="https://twitter.com/indichix0" target="_blank" rel="external"></a>
+                </span>
+              </div>
+              <div class="col-sm-3">
+                <span class="fa fa-send">
+                  <a href="tg://join?invite=BzYbRwrKCTX224rH7ECSVQ" target="_blank" rel="external"></a>
+                </span>
+              </div>
+              <div class="col-sm-6">
+                <span class="fa fa-github-alt">
+                  <a href="http://github.com/LinuxChixIndia" target="_blank" rel="external">
+                  </a>
+                </span>
+                  <p class="text-center" id="github-text">Visit and collaborate with us on Github</p>
+              </div>
+            </div>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</body></html>
