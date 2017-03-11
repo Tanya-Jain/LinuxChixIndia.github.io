@@ -1,40 +1,157 @@
-body {
-  font-family: 'Arima Madurai', serif;
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bg {
+    /*image*/
+    background-image: url("../img/header4.jpg");
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    /*rest*/
+  position:relative;
+  color:#fff!important;
+}
+.MainHeading{
+  /*Middle display*/
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);
   text-align: center;
-  display: flex;
+
+  color: #11147F;
+  font-size:58px!important;
+  padding:32px 64px!important;
+  font-family: 'Milonga';
+  text-shadow: 5px 5px 5px #f5cd48;
+  line-height: 1.5;
+  font-weight: bold;
+}
+#Navi{
+  /*Topleft display*/
+  position:absolute;
+  left:0;
+  top:0;
+  padding:32px 64px!important;
+}
+#Navi button{
+  font-size:24px!important;
+  font-family: 'Coustard';
+  color: #11147f;
+  outline: #11147f 3px;
+}
+.NextMeet{
+  /*bottom left display*/
+  position:absolute;
+  left:0;
+  bottom:0;
+
+  padding:32px 64px!important;
+}
+.NextMeet p{
+  font-size:20px!important;
+  font-family: 'Quattrocento Sans';
+  font-weight: bold;
+  color: #11147f;
+}
+.Modal{
+  z-index:3;
+  display:none;
+  padding-top:100px;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  overflow:auto;
+  background-color:rgba(245, 205, 72, 0.4);
+}
+.content-pop {
+  padding: 0px 40px 40px 40px;
+}
+.ModalContent{
+  margin:auto;
+  background-color:#5398BE;
+  position:relative;
+  padding:0;
+  outline:0;
+  width:600px;
+}
+#four{vertical-align: middle;}
+@media (max-width:700px){
+    .MainHeading{font-size:36px!important;}
+    .MainHeading img{height:68px;}
+    #four{font-size: 50px;}
+    .ModalContent{margin:0 10px; width:auto!important;}
+    .Modal{padding-top:30px}
+  }
+@media (max-width:768px){
+  .MainHeading{font-size:42px!important;}
+  .MainHeading img{height:100px;}
+  #four{font-size: 65px;}
+  .ModalContent{width:100%}
+  .Modal{padding-top:50px}
+}
+@media (max-width:993px){
+  .MainHeading{font-size:48px!important;}
+  .MainHeading img{height:118px;}
+  #four{font-size: 80px;}
+  .ModalContent{width:100%}
+}
+@media (min-width:993px){
+  .MainHeading{font-size:58px!important;}
+  .MainHeading img{height:194px;}
+  #four{font-size: 140px;}
+  .ModalContent{width:600px}
+}
+.ModalContainer{padding:0.01em 16px;}
+.ModalContainer:after{content:"";display:table;clear:both;}
+.ModalContainerHead h1{font-family: 'Coustard'; font-size: 27px; color:#d3d4e7;}
+.ModalContainer h5{font-family:'roboto'; color:#D0E2ED;}
+@keyframes .w3-animate-zoom {
+  -webkit-animation:animatezoom 0.6s;
+  animation:animatezoom 0.6s
+}
+.CrossButtonH{
+  color:#11147f!important;
+  background-color:none!important;
+  border-radius: 0px !important;
+   background-color: transparent;
+}
+.CrossButtonH:hover{
+  color:#3C3E96!important;
+}
+.CrossButton{
+  font-size:36px!important;
+  color:#757575!important;
+}
+.CrossButton:hover{color:;#A1C6DB}
+.SocialIcons{margin-bottom: 30px; padding-left: -10px;}
+.SocialIcons div{
+  display: inline-flex;
+  -webkit-justify-content: center;
   justify-content: center;
-  flex-direction: column;
-  height: 400px;
+  align-content: center;
+  margin-bottom: 10px;
 }
-
-p {
-  font-family: sans-serif;
+@media(max-width:995px){.SocialIcons div{flex-wrap: wrap;}}
+.SocialIcons p{
+  font-size: 20px;
+  font-family: 'Coustard';
+  color: #515151;
+  vertical-align: middle;
 }
-
-h1 {
-  font-size: 48px;
+#mail-text,#github-text{color:#A1C6DB; padding-top: 20px;}
+.glyphicon, .fa{font-size: 100px!important;  margin: 5px; color:#A1C6DB;}
+.glyphicon:hover, .fa:hover{color: #F5C936;}
+.glyphicon-triangle-right, .glyphicon-triangle-left{
+  color: #5398BE;
+  font-size: 60px !important;
+  left: -6px;
 }
-
-a {
-  text-decoration: none;
-  transition: all 0.3s ease;
-  border-bottom: 1px solid transparent;
-  color: #376fa0;
-}
-
-a:hover, a:active {
-	border-bottom: 1px solid;
-}
-
-.social-links ul {
-}
-
-.social-links li {
-	text-align: left;
-}
-
-#listtop > li {
-	text-align: left;
-	margin-left: 30%;
-	margin-right: 50%;
-}
+.glyphicon-triangle-right:hover, .glyphicon-triangle-left:hover{color: #5398BE!important;}
+#subscribe, #guidelines{background-color: #A1C6DB; min-width:150px; max-width:200px; border-radius:3px;}
+#subscribe{left:20px;}
+#guidelines{right:20px;}
+#subscribe > p{top:20px; color: #4c8bad; padding-top: 40px; padding-right: 40px;}
+#guidelines > p{top:20px; color: #4c8bad; padding-top: 40px; padding-left: 40px;}
